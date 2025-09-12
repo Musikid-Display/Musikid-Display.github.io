@@ -4,7 +4,7 @@ import { motion, useMotionValue, useSpring } from 'motion/react';
 import './TiltedCard.css';
 
 interface TiltedCardProps {
-  imageSrc: React.ComponentProps<'img'>['src'];
+  coverImage?: React.ComponentProps<'img'>['src'];
   altText?: string;
   captionText?: string;
   containerHeight?: React.CSSProperties['height'];
@@ -17,6 +17,9 @@ interface TiltedCardProps {
   showTooltip?: boolean;
   overlayContent?: React.ReactNode;
   displayOverlayContent?: boolean;
+  title?: string;
+  artist?: string;
+  artistImage?: string;
 }
 
 const springValues: SpringOptions = {
@@ -26,7 +29,7 @@ const springValues: SpringOptions = {
 };
 
 export default function TiltedCard({
-  imageSrc,
+  coverImage = `imageSrc`,
   altText = 'Tilted card image',
   captionText = '',
   containerHeight = '300px',
@@ -117,7 +120,7 @@ export default function TiltedCard({
         }}
       >
         <motion.img
-          src={imageSrc}
+          src={coverImage}
           alt={altText}
           className="tilted-card-img"
           style={{
