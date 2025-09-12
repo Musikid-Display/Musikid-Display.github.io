@@ -1,0 +1,4 @@
+ @font-face {
+  font-family: 'Akira';
+  src:  local('Akira'), url('./assets/Akira.otf') format('otf');
+}
