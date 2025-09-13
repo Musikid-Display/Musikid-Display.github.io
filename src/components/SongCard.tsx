@@ -1,14 +1,14 @@
-import { useState } from 'react'
 import TiltedCard from './TiltedCard';
 import cover1 from '../assets/Covers/cover1.png'
+import SongInfo from './SongInfo.tsx';
 
 
 export default function SongCard(){
   return(
-    <div>
+    <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", alignContent: "center"}}>
 <TiltedCard
   coverImage= {cover1}
-  altText= ""
+  altText= "" 
   captionText= ""
   containerHeight="200px"
   containerWidth="200px"
@@ -20,12 +20,8 @@ export default function SongCard(){
   showTooltip={false}
   displayOverlayContent={false}
 />
-    <p className="tilted-card-demo-text"  style={{fontSize: "15px", paddingTop: "15px", alignSelf: "center"}}>
-      Turks
-    </p>
-        <p className="tilted-card-demo-text"  style={{fontSize: "15px",fontFamily: "Akira", alignSelf: "center", }}>
-      ohsxnta
-    </p>
+<SongInfo />
+
 </div>
   )
 }

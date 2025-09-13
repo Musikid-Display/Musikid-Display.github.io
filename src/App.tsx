@@ -6,6 +6,7 @@ import ProfileCard from './components/SongCard'
 import cover1 from './assets/Covers/Cover1.png'
 import artist1 from './assets/Artists/Artist1.png'
 import SongCard from './components/SongCard';
+import SongInfo from './components/SongInfo';
 
 
 

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap');
+
 .tilted-card-figure {
   position: relative;
   width: 100%;
@@ -36,7 +38,7 @@
   top: 0;
   left: 0;
   object-fit: cover;
-  border-radius: 15px;
+  border-radius: 10px;
   will-change: transform;
   transform: translateZ(0);
 }
@@ -62,4 +64,28 @@
   color: #2d2d2d;
   opacity: 0;
   z-index: 3;
+}
+
+.tilted-card-demo-text {
+  color:#000000;
+  border-radius:12px;
+  margin:4px;
+  padding:.5rem 1em;
+  font-family:sans-serif;
+  font-weight: 800;
+  font-size: 30px;;
+  letter-spacing: 0.5px;
+  width: fit-content;
+}
+
+.tilted-card-demo-text-artist {
+  color:#000000;
+  border-radius:12px;
+  margin:4px;
+  padding:.5rem 1em;
+  font-family:sans-serif;
+  font-weight: 800;
+  font-size: 20px;;
+  letter-spacing: 0.5px;
+  width: fit-content;
 }
